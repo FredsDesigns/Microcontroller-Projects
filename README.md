@@ -5,6 +5,5 @@ If your new to microcontroller programming, I highly recommend you to build the 
 My other projects will teach you various skills ranging from SPI/I2C/PWM/ADC/WiFi/Interfacing/Filtering/Database collection/ and more!
 I also will have a FPGA Project collection where I tend to write in VHDL, but will also feature SystemVerilog so please keep an eye open for that!
 Various languages and IDEs are involved so please read the unique READMEs attached to each folder.
-I mainly work through the C++ Language using the Arduino IDE library as has various library support to unique devices readily available so I highly suggest you download that first.
 
-If you'd like to use a portion of the project to be included in your own projects, no need to ask! These projects are completely open source, all I ask is if you could please reference me in your implementation that would be greatly appreciated!
+If you'd like to use a portion of the project to be included in your own projects, no need to ask! These projects are completely open source, I humbly ask that you simply credit me for my work!
