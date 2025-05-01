@@ -11,7 +11,13 @@ Hardware Setup:
 (Mandatory)
 First place the AT932C46 onto your breadboard and refer to the datasheet regarding pin layout
 Here is the layout of this specific chip
+
+
+
 ![image](https://github.com/user-attachments/assets/251b2047-4044-4ae1-93e3-0814176a676c)
+
+
+
 
 To begin, first attach GND to GND of your Arduino
 Do the same for your ORG Pin, as we will be working in 8-bit mode
@@ -19,7 +25,11 @@ Then attach Vcc to 5V of your Arduino
 Attach CS to Pin 10
 *These next pins are board dependent! If your using an Arduino (like the R4) with specific SPI bus connections, please refer to this image to see your connections!
 However, since this is a bit bang project, you can always exchange these pins, to any others in the ino file, I just like to keep them referred to the offical SPI bus lines!*
+
+
 ![image](https://github.com/user-attachments/assets/c8fa1591-d3df-4d5d-99f8-4ab2c7df22c9)
+
+
 
 The bottom of the R4 has specific headers for the SPI bus, note if your board has these pins make sure to always use them for MOSI/MISO/SK! The regular headers may cause issues!
 Attach DO (MISO) to pin 11 (PIN 4 on the R4)
@@ -50,7 +60,13 @@ Simply upload the code to the board, and if using a logical analyzer, start the 
 *Note: When the code is uploaded, you may need to hit the reset button on the Arduino board your using to view the results in the serial monitor!*
 *Not doing so will have the code ran and uploaded but you wont see any response back, so make sure to reset after uploading!*
 You should be able to see the instructions as shown below, being sent properly, starting with EWEN which enables write and should always be the first command before any other is assigned.
+
+
+
 ![image](https://github.com/user-attachments/assets/cf17e1e1-25b3-41b2-bda0-a6c0454b9e2c)
+
+
+
 
 *Note, that mandatory bits are grouped together for efficiency, such as EWEN sends (10011) first which is composed of:
 The start bit (1)
